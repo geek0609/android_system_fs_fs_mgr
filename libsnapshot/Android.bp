@@ -168,6 +168,9 @@ cc_library_static {
     ],
     srcs: [":libsnapshot_sources"],
     recovery_available: true,
+    cflags: [
+        "-DLIBSNAPSHOT_NO_COW_WRITE",
+    ],
     static_libs: [
         "libfs_mgr",
     ],

@@ -24,6 +24,7 @@ bool SetProfiles(std::initializer_list<std::string_view> profiles);
 bool KernelSupportsIoUring();
 bool KernelSupportsDeferTask();
 
+bool GetUserspaceSnapshotsEnabledProperty();
 bool KernelSupportsCompressedSnapshots();
 bool CanUseUserspaceSnapshots();
 
